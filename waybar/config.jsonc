@@ -1,0 +1,48 @@
+// -*- mode: jsonc -*-
+{
+    "height": 30,
+    "spacing": 4,
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/mode"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "clock",
+        "tray"
+    ],
+    "hyprland/window": {
+        "format": "[ {} ]"
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "[ CPU: {usage}% ]",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "[ MEM: {}% ]"
+    },
+    "network": {
+        "format-wifi": "[ {essid} ({signalStrength}%) ]",
+        "format-ethernet": "[ NET: {ipaddr}/{cidr} ]",
+        "tooltip-format": "[ NET: {ifname} via {gwaddr} ]",
+        "format-linked": "[ NET: {ifname} (No IP) ]",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "[ {ifname}: {ipaddr}/{cidr} ]"
+    },
+    "pulseaudio": {
+        "format": "[ VOL: {volume}% ]",
+        "on-click": "pavucontrol"
+    }
+}

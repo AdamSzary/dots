@@ -13,10 +13,15 @@
     },
 
     "logo": {
+<<<<<<< HEAD
         "source": "/home/szary/.config/fastfetch/chito.png",
         "type": "kitty-direct",
         "width": 30,
         "height": 15,
+=======
+        "source": "/home/szary/.config/fastfetch/logo.txt",
+        "type": "file",
+>>>>>>> f7d535180bdd52cafe05a9d9d98ca4efe943fb93
         "color": {
             "1": "white"
         }
